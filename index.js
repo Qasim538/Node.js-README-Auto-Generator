@@ -62,9 +62,14 @@ function runQuery() {
     return inquirer.prompt(questions)
     .then((answers)=> {
         const mark = MarkDown.generateReadme(answers)
-        fs.writeFile('README.md', mark, function(err)=>{})
-        console.log(mark)
-        return answers
+        fs.writeFile('README.md', mark, function(err) {
+    if(err) {
+        console.log('Could not save file', err);
+    } else {
+        console.log('Success: new README.md file generated inside the current folder');
+    }
+    })
+    
     })
 
     .catch((error) => { 
