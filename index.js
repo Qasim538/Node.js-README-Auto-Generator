@@ -1,4 +1,6 @@
 const inquirer = require('inquirer')
+const fs = require('fs')
+const MarkDown = require('./lib/ReadmeGen')
 
 
 // App Questions
@@ -44,10 +46,10 @@ const questions = [
     {
         type: 'list',
         name: 'license',
-        message: 'License',
-        choices:['MIT', 'ISC', 'GNULPv3'],
+        message: 'License?',
+        choices:['MIT', 'ISC', 'GNUPLv3'],
         filter(val) {
-            return val.tolowerCase();
+            return val.toLowerCase();
         }
     },
 
@@ -55,11 +57,13 @@ const questions = [
 ]
 
 // run query function
-
+ 
 function runQuery() {
     return inquirer.prompt(questions)
     .then((answers)=> {
-        console.log(answers)
+        const mark = MarkDown.generateReadme(answers)
+        fs.writeFile('README.md', mark, function(err)=>{})
+        console.log(mark)
         return answers
     })
 
