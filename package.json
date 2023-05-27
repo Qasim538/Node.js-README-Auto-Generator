@@ -1,24 +1,18 @@
 {
-  "name": "readme-auto-generator",
+  "name": "cli-readme-generator",
   "version": "1.0.0",
-  "description": "This is Auto Readme Generatory where you can create a professional README using commands.",
-  "main": "app.js",
+  "description": "",
+  "main": "index.js",
   "scripts": {
-    "start": "nodemon app.js"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/Qasim538/README-Auto-Generator.git"
+    "start": "nodemon index.js"
   },
   "keywords": [],
-  "author": "Qasim",
+  "author": "",
   "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/Qasim538/README-Auto-Generator/issues"
-  },
-  "homepage": "https://github.com/Qasim538/README-Auto-Generator#readme",
   "dependencies": {
-    "inquirer": "^9.2.6",
+    "inquirer": "^6.5.2"
+  },
+  "devDependencies": {
     "nodemon": "^2.0.22"
   }
 }
