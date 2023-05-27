@@ -1,9 +1,6 @@
-class MarkDown {
 
-    static generateReadme(answers){
-        return `
 
-    # ${answers.title}
+    # ;lkj;lkj;lj
     
     ## Table of Content
     - [Project Description](#Description)
@@ -14,22 +11,18 @@ class MarkDown {
     - [Lincese](#License)
 
     ## Description
-    ${answers.description}
+    a;lksd;flkjadf
 
     ## Usage
-    ${answers.usage}
+    ;lkas;dlkjfadf
 
     ## Installation 
-    ${answers.contributing}
+    undefined
 
     ## Questions
-    ${answers.email}
-    ${answers.github}
+    ;lksd;lkja;sdf
+    'lakjsd;lfkjad;f
 
     ## License
-    ${answers.license}
-    `
-    }
-}
-
-module.exports = MarkDown
+    mit
+    
