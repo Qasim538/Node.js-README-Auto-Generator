@@ -33,6 +33,12 @@ const questions = [
 
     {
         type: 'input',
+        name: 'installation',
+        message: 'How to start',
+    },
+
+    {
+        type: 'input',
         name: 'email',
         message: 'for question(email)',
     },
@@ -40,14 +46,14 @@ const questions = [
     {
         type: 'input',
         name: 'github',
-        message: 'for question(github)',
+        message: 'for coding(github)',
     },
 
     {
         type: 'list',
         name: 'license',
         message: 'License?',
-        choices:['MIT', 'ISC', 'GNUPLv3'],
+        choices:['MIT', 'ISC', 'GNUGPLv3'],
         filter(val) {
             return val.toLowerCase();
         }
