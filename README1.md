@@ -50,5 +50,5 @@ https://github.com/Qasim538
 
 # Preview
 A video added in the asset folder for review.
-![Preview](Assets/Demp.mov)
+![Preview](Assets/Preview.png)
 
